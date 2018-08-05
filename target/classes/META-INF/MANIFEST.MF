@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: fuel-web
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: mateusz
+Implementation-Vendor-Id: com.prusdrum
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/fuel-web
+Created-By: Maven Integration for Eclipse
+
