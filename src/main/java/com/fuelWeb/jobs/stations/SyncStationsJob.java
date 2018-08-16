@@ -49,8 +49,9 @@ public class SyncStationsJob {
         				lng + 
         				");";
         		
-        		Statement statement = connection.createStatement();
-        		statement.executeQuery(sql);
+//        		Statement statement = connection.createStatement();
+//        		statement.executeQuery(sql);
+        		System.out.println(sql);
         		
         	} catch (SQLException e) {
 				e.printStackTrace();
