@@ -1,17 +1,21 @@
 package com.fuelWeb.stations.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity(name="stations")
 public class Station {
+	@Id
 	private String id;
-	
 	private String name;
+	private double lng;
+	private double lat;
 	
-	@Override
-	public String toString() {
-		return "Station [id=" + id + ", name=" + name + ", location_lat=" + location_lat + ", location_lng="
-				+ location_lng + "]";
+	
+	
+	public Station() {
+		super();
 	}
-	private double location_lat;
-	private double location_lng;
 	public String getId() {
 		return id;
 	}
@@ -24,16 +28,17 @@ public class Station {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public double getLocation_lat() {
-		return location_lat;
+	public double getLng() {
+		return lng;
 	}
-	public void setLocation_lat(double location_lat) {
-		this.location_lat = location_lat;
+	public void setLng(double lng) {
+		this.lng = lng;
 	}
-	public double getLocation_lng() {
-		return location_lng;
+	public double getLat() {
+		return lat;
 	}
-	public void setLocation_lng(double location_lng) {
-		this.location_lng = location_lng;
+	public void setLat(double lat) {
+		this.lat = lat;
 	}
+	
 }

@@ -17,5 +17,15 @@ public class Location {
 		this.lng = lng;
 	}
 	
+	public Location() {
+		super();
+	}
+	
+	public Location(double lat, double lng) {
+		super();
+		this.lat = lat;
+		this.lng = lng;
+	}
+	
 	
 }

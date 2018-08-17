@@ -1,8 +1,11 @@
 package com.fuelWeb.stations.model;
 
+import com.fuelWeb.jobs.stations.model.Location;
+
 public class StationDTO {
 
 	private String name;
+	private Location location;
 
 	public StationDTO(String name) {
 		super();
@@ -15,5 +18,13 @@ public class StationDTO {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public Location getLocation() {
+		return location;
+	}
+
+	public void setLocation(Location location) {
+		this.location = location;
 	}
 }
