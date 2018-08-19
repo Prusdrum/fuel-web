@@ -1,7 +1,5 @@
 package com.fuelWeb;
 
-import java.util.Properties;
-
 import javax.sql.DataSource;
 
 import org.springframework.context.annotation.Bean;
@@ -9,7 +7,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.Database;
@@ -58,16 +55,4 @@ public class DataBaseConfig {
 		
 		return adapter;
 	}
-//	
-//	@Bean
-//	public LocalSessionFactoryBean sessionFactory(DataSource dataSource) {
-//		LocalSessionFactoryBean fb = new LocalSessionFactoryBean();
-//		
-//		fb.setPackagesToScan("com.fuelWeb.stations.model");
-//		fb.setDataSource(dataSource);
-//		Properties props = new Properties();
-//		props.setProperty("dialect", "org.hibernate.dialect.PostgreSQLDialect");
-//		fb.setHibernateProperties(props);
-//		return fb;
-//	}
 }

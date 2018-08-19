@@ -4,12 +4,32 @@ import com.fuelWeb.jobs.stations.model.Location;
 
 public class StationDTO {
 
+	private long id;
 	private String name;
 	private Location location;
 
 	public StationDTO(String name) {
 		super();
 		this.name = name;
+	}
+	
+	public StationDTO() {
+		super();
+	}
+	
+	public StationDTO(long id, String name, Location location) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.location = location;
+	}
+	
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 
 	public String getName() {

@@ -26,6 +26,7 @@ public class StationsServiceImpl implements StationsService {
 						station.getLng()
 				)
 			);
+			dto.setId(station.getId());
 			
 			return dto;
 		}).collect(Collectors.toList());
