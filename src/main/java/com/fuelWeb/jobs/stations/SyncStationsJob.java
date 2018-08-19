@@ -36,6 +36,7 @@ public class SyncStationsJob {
     		station.setLat(lat);
     		station.setLng(lng);
     		station.setExternalId(id);
+    		station.setAddress(result.getVicinity());
     		
     		repository.save(station);
         });

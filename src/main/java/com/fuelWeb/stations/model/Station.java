@@ -16,6 +16,7 @@ public class Station {
 	private String name;
 	private double lng;
 	private double lat;
+	private String address;
 	
 	public Station() {
 		super();
@@ -50,6 +51,14 @@ public class Station {
 	}
 	public void setLat(double lat) {
 		this.lat = lat;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
 	
 }

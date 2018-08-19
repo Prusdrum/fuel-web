@@ -7,6 +7,7 @@ public class StationDTO {
 	private long id;
 	private String name;
 	private Location location;
+	private String address;
 
 	public StationDTO(String name) {
 		super();
@@ -46,5 +47,13 @@ public class StationDTO {
 
 	public void setLocation(Location location) {
 		this.location = location;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
 }
