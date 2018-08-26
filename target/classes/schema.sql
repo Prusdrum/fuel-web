@@ -11,3 +11,14 @@ CREATE TABLE public.stations
 WITH (
     OIDS = FALSE
 );
+
+CREATE TABLE public.price_records
+(
+	id bigserial NOT NULL,
+	station_id bigserial NOT NULL,
+	integer price,
+	currency character varying(5),
+	price_date TIMESTAMP WITH TIME ZONE,
+	created_at TIMESTAMP WITH TIME ZONE,
+	user_id bigserial
+);

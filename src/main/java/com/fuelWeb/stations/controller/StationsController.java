@@ -20,4 +20,6 @@ public class StationsController {
 	public List<StationDTO> getAllStations() {
 		return stationsService.getStations();
 	}
+	
+	
 }
